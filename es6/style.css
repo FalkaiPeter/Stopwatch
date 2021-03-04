@@ -1,0 +1,57 @@
+html, body {
+  overflow: auto;
+  margin: 0;
+  min-height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(255, 175, 0);
+  background: linear-gradient(-45deg, rgba(255, 175, 0, 1) 0%, rgba(255, 0, 228, 1) 49%, rgba(166, 0, 255, 1) 100%);
+  color: #fff;
+}
+button {
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#display {
+  font-size: 36px;
+  text-align: center;
+  padding: 50px;
+}
+#stopwatch {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border-radius: 50%;
+  background: transparent
+    url("https://i.dlpng.com/static/png/1341626-clock-face-clip-art-analog-clock-without-hands-png-of-clock-without-hands-900_600_preview.png")
+    no-repeat center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+#s {
+  height: 290px;
+  width: 4px;
+  position: absolute;
+  left: 148px;
+  top: 5px;
+}
+.pointer {
+  border-radius: 2px;
+  background-color: #f00;
+  height: 50%;
+  width: 100%;
+}

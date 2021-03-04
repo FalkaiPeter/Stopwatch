@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch ES5</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Stopwatch ES5</h1>
+    <span id="display">00:00:00:00</span>
+
+    <div id="stopwatch">
+      <div id="s">
+        <div class="pointer"></div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button onclick="startPause()" id="startPause">Start</button>
+      <button onclick="splitTime()">SplitTime</button>
+      <button onclick="reset()" id="reset">Reset</button>
+<!--       <button onclick="stopWatch.startStop()" id="startPause">Start</button>
+      <button onclick="stopWatch.splitTime()">SplitTime</button>
+      <button onclick="stopWatch.reset()" id="reset">Reset</button> -->
+    </div>
+    <div id="splits"></div>
+  </body>
+</html>
